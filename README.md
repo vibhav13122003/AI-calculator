@@ -40,7 +40,8 @@ This project is a full-stack application combining a React frontend (using Vite)
    git clone https://github.com/your-repo.git
    cd your-repo/backend
    python -m venv venv
+   pip install -r requirements.txt
+
 source venv/bin/activate   # For Linux/MacOS
 # On Windows use `venv\Scripts\activate`
-2. pip install -r requirements.txt
 
