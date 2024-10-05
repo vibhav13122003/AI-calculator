@@ -40,7 +40,8 @@ source venv/bin/activate   # For Linux/MacOS
    npm install @vitejs/plugin-react eslint eslint-plugin-react --save-dev
 
 ### Update eslint.config.js
-// eslint.config.js
+
+**// eslint.config.js
 import react from 'eslint-plugin-react';
 import tseslint from '@typescript-eslint/eslint-plugin';
 
@@ -58,6 +59,6 @@ export default tseslint.config({
     ...react.configs.recommended.rules,
     ...react.configs['jsx-runtime'].rules,
   },
-});
+});**
 
 
