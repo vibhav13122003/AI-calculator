@@ -1,7 +1,7 @@
 # AI-calculator
 # React + TypeScript + Vite App with FastAPI Backend
 
-This project is a full-stack application combining a React frontend (using Vite) and a FastAPI backend. The frontend is built with TypeScript and React, while the backend serves as an API using FastAPI.
+This project is a Gemini Based application combining a React frontend (using Vite) and a FastAPI backend. The frontend is built with TypeScript and React, while the backend serves as an API using FastAPI.
 
 
 ## Tech Stack
@@ -40,25 +40,36 @@ source venv/bin/activate   # For Linux/MacOS
    npm install @vitejs/plugin-react eslint eslint-plugin-react --save-dev
 
 ### Update eslint.config.js
+**
+      //eslint.config.js
 
-**// eslint.config.js
-import react from 'eslint-plugin-react';
-import tseslint from '@typescript-eslint/eslint-plugin';
+     import react from 'eslint-plugin-react';
 
-export default tseslint.config({
-  languageOptions: {
+      import tseslint from '@typescript-eslint/eslint-plugin';
+
+     export default tseslint.config({
+
+    languageOptions: {
+  
     parserOptions: {
+    
       project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      
       tsconfigRootDir: import.meta.dirname,
     },
-  },
-  settings: { react: { version: '18.3' } },
-  plugins: { react },
-  rules: {
+    },
+    settings: { react: { version: '18.3' } },
+  
+    plugins: { react },
+  
+    rules: {
+  
     // Enable React recommended rules
+    
     ...react.configs.recommended.rules,
+    
     ...react.configs['jsx-runtime'].rules,
-  },
-});**
-
+    },
+    });
+   **
 
