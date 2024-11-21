@@ -8,6 +8,7 @@ from constants import SERVER_URL, PORT, ENV
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     
+    
     yield
 
 app = FastAPI(lifespan=lifespan)
@@ -15,7 +16,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=['https://ai-frontend-gilt-ten.vercel.app'],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
